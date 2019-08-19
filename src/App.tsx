@@ -1,12 +1,14 @@
-import React from "react";
-import TodoList from "./components/TodoList";
+import React, { Component } from 'react';
+import TodoListContainer from './container/TodoListContainer';
 
-const App: React.FC = () => {
-  return (
-    <div>
-      <TodoList />
-    </div>
-  );
-};
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <TodoListContainer />
+      </div>
+    );
+  }
+}
 
 export default App;
